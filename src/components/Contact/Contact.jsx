@@ -9,36 +9,39 @@ function Contact() {
                 <p>
                     I'm currently seeking full-time opportunities or internships.
                     Whether you want to discuss a project, talk about a MERN role,
-                    feel free to reach out!
+                    or just chat tech engineering—feel free to reach out!
                 </p>
 
                 <div className="contact-links">
                     <a
                         href="mailto:mohdafzal_MA@outlook.com"
-                        className="contact-btn email-btn"
+                        className="contact-link-item email-btn"
                         title="Email Me"
                     >
-                        <EmailIcon /> Email Me!
+                        <EmailIcon /> 
+                        <span>Email Me!</span>
                     </a>
 
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://www.linkedin.com/in/mohd-afzal-web-dev/"
-                        className="contact-icon-link"
+                        className="contact-link-item"
                         title="LinkedIn"
                     >
-                        <LinkedinIcon /> Find me on Linkedin.
+                        <LinkedinIcon /> 
+                        <span>Find me on LinkedIn</span>
                     </a>
 
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/sMv-Jones"
-                        className="contact-icon-link"
+                        className="contact-link-item"
                         title="GitHub"
                     >
-                        <GithubIcon /> Checkout my Github.
+                        <GithubIcon /> 
+                        <span>Check out my GitHub</span>
                     </a>
                 </div>
 

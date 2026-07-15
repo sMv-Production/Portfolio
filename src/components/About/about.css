@@ -1,0 +1,57 @@
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Accent Heading */
+.about-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Paragraph styling */
+.about-text {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+}
+
+/* Bold highlights using secondary theme color */
+.about-container strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Highlight section for hardware/hobby to break text density */
+.highlight-box {
+    background-color: var(--bg-secondary);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.75rem 0;
+}
+
+.highlight-box p {
+    margin: 0;
+    color: var(--text);
+}
+
+/* Subtle separator rule */
+.about-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border-light);
+    margin: 2rem 0;
+}

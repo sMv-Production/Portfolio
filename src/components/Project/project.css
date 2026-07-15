@@ -1,20 +1,25 @@
-/* Container Layout */
 .projects-section {
-    padding: 2rem 1rem;
-    background-color: var(--bg);
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.section-title {
-    color: var(--text);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
+.projects-section .section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 2.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .projects-grid {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 /* Horizontal Project Card Structure */
@@ -41,6 +46,7 @@
     max-width: 45%;
     position: relative;
     overflow: hidden;
+    background-color: var(--bg-secondary);
 }
 
 .project-image {
@@ -67,37 +73,39 @@
 
 .project-title {
     color: var(--text);
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .project-description {
     color: var(--text-secondary);
     line-height: 1.6;
     font-size: 0.95rem;
+    margin: 0;
 }
 
-/* Rounded Box Badges */
+/* Rounded Pill Badges using info pop colors */
 .project-tech-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 0.5rem;
 }
 
 .tech-badge {
     background-color: var(--surface-2);
-    color: var(--info); /* Using high-contrast cyan accent */
-    border: 1px solid var(--border-light);
+    color: var(--info);
+    border: 1px solid var(--border);
     padding: 0.35rem 0.85rem;
     font-size: 0.8rem;
-    font-weight: 500;
-    border-radius: 50px; /* Fully rounded edge pill styling */
-    transition: background-color 0.2s ease;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .project-card:hover .tech-badge {
-    background-color: var(--surface);
+    background-color: var(--bg);
+    border-color: var(--border-light);
 }
 
 /* Button & Link Interface */
@@ -113,21 +121,24 @@
     font-size: 0.9rem;
     font-weight: 600;
     border-radius: 6px;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .live-btn {
     background: var(--gradient-primary);
-    color: var(--text);
+    color: #FFFFFF !important; /* Forces clear contrast text across dark/light background states */
 }
 
 .live-btn:hover {
-    background: var(--primary-hover);
+    opacity: 0.9;
 }
 
 .github-btn {
-    background-color: transparent;
+    background-color: var(--bg-secondary);
     color: var(--text-secondary);
     border: 1px solid var(--border-light);
 }
@@ -135,26 +146,27 @@
 .github-btn:hover {
     background-color: var(--surface-2);
     color: var(--text);
-    border-color: var(--text-muted);
+    border-color: var(--primary);
 }
 
 .project-btn:active {
     transform: scale(0.98);
 }
 
-/* Responsive Adaptive Viewports for Tablets and Phones */
+/* Responsive Structural Fallbacks */
 @media (max-width: 768px) {
     .project-card {
-        flex-direction: column; /* Stack vertically on small viewports */
+        flex-direction: column;
     }
     
     .project-image-container {
         max-width: 100%;
         min-width: 100%;
-        height: 220px;
+        height: 200px;
     }
     
     .project-details {
         padding: 1.5rem;
+        gap: 1rem;
     }
 }

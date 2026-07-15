@@ -6,20 +6,23 @@ function Hero() {
         <div className="hero-body">
             <h1>Mohd Afzal</h1>
             <h2>Full Stack Developer</h2>
-            <p>I build responsive, modern web applications specializing in the MERN stack. Focused on writing clean backend architecture and crafting dynamic user experiences.</p>
+            <p>
+                I build responsive, modern web applications specializing in the MERN stack. 
+                Focused on writing clean backend architecture and crafting dynamic user experiences.
+            </p>
             <div className="hero-Contact">
                 {/* Email */}
-                <a target="_blank" rel="noopener noreferrer" href="mailto:mohdafzal_MA@outlook.com">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:mohdafzal_MA@outlook.com" title="Email Me">
                     <EmailIcon />
                 </a>
                 
-                {/* GitHub (Fixed link & icon swap) */}
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/sMv-Jones">
+                {/* GitHub */}
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/sMv-Jones" title="GitHub Profile">
                     <GithubIcon />
                 </a>
                 
-                {/* LinkedIn (Fixed link & icon swap) */}
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohd-afzal-web-dev/">
+                {/* LinkedIn */}
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohd-afzal-web-dev/" title="LinkedIn Profile">
                     <LinkedinIcon />
                 </a>
             </div>
@@ -27,4 +30,4 @@ function Hero() {
     );
 }
 
-export default Hero;    
+export default Hero;

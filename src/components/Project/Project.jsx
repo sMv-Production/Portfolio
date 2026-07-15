@@ -1,11 +1,10 @@
 import './project.css';
 
 function Project() {
-    // Array containing project details
     const projectsData = [
         {
             id: 1,
-            img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80", // Replace with your project image URL
+            img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
             projectName: "E-Commerce Microservice Platform",
             description: "A complete full-stack MERN shopping platform featuring modular service routers, dynamic state tracking, full stripe payment integration, and a highly customizable user panel.",
             technologies: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit", "Stripe"],
@@ -14,7 +13,7 @@ function Project() {
         },
         {
             id: 2,
-            img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80", // Replace with your project image URL
+            img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80",
             projectName: "Developer Collaboration Hub",
             description: "A centralized social network built for technical users. Implements secure JWT access, aggregation tracking, real-time message rooms, and custom hardware profile showcases.",
             technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
@@ -49,8 +48,10 @@ function ProjectCard({ project }) {
 
             {/* Right Side: Details container */}
             <div className="project-details">
-                <h3 className="project-title">{projectName}</h3>
-                <p className="project-description">{description}</p>
+                <div>
+                    <h3 className="project-title">{projectName}</h3>
+                    <p className="project-description">{description}</p>
+                </div>
 
                 {/* Rounded Box Technologies List */}
                 <div className="project-tech-list">

@@ -18,7 +18,7 @@ function Education() {
       institution: "Your School Name Here",
       duration: "2021 - 2022",
       metricType: "Percentage",
-      metricValue: "X%" // Replace with your actual percentage
+      metricValue: "X%" 
     },
     {
       level: "Secondary School (Class X)",
@@ -26,7 +26,7 @@ function Education() {
       institution: "Your School Name Here",
       duration: "2019 - 2020",
       metricType: "Percentage",
-      metricValue: "X%" // Replace with your actual percentage
+      metricValue: "X%" 
     }
   ];
 
