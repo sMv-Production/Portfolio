@@ -8,7 +8,7 @@ function Project() {
             projectName: "sMv|Blog",
             description: " A full-stack blogging application built using the MERN Stack, featuring rich-text content creation with TinyMCE Editor, secure image hosting with Azure Blob Storage, and a serverless email notification microservice built with Google Apps Script.",
             technologies: ["React", "Node.js", "Express", "MongoDB", "TinyMCE", "Azure Blob Storage", "Redux Toolkit"],
-            liveLink: "https://s-mv-blog.vercel.app/",
+            liveLink: "https://smv-blog.vercel.app/",
             githubLink: "https://github.com/sMv-Jones/sMvBlog"
         },
         {
@@ -17,7 +17,7 @@ function Project() {
             projectName: "TalentGPT",
             description: "An intelligent, context-aware resume screening platform built with the MERN stack. The application uses Azure AI Document Intelligence for accurate resume parsing, Vector Cosine Similarity for semantic matching, and Google Gemini AI for advanced candidate analysis and skill-gap detection.",
             technologies: ["Gemini", "React", "Node.js", "MongoDB", "Tailwind CSS"],
-            liveLink: "https://ai-enabled-ats-steel.vercel.app/",
+            liveLink: "https://talentgpt-ai.vercel.app/",
             githubLink: "https://github.com/sMv-Jones/AI-Enabled-ATS"
         },
         {
@@ -26,7 +26,7 @@ function Project() {
             projectName: "NeuroDigest",
             description: " full-stack AI-powered platform that transforms text, images, audio, video, and unstructured documents into clear, intelligent summaries. By combining a modern React frontend with a secure Express backend, it orchestrates multiple Microsoft Azure AI services to extract content from different formats and convert them into concise insights.",
             technologies: ["Azure AI", "React", "Node.js", "MongoDB", "Tailwind CSS"],
-            liveLink: "https://ai-multi-model-summarizer.vercel.app/",
+            liveLink: "https://neruodigest.vercel.app/",
             githubLink: "https://github.com/sMv-Jones/AI-Multi-Model-Summarizer"
         }
     ];
