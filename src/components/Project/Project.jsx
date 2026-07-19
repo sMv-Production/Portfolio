@@ -4,21 +4,30 @@ function Project() {
     const projectsData = [
         {
             id: 1,
-            img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
-            projectName: "E-Commerce Microservice Platform",
-            description: "A complete full-stack MERN shopping platform featuring modular service routers, dynamic state tracking, full stripe payment integration, and a highly customizable user panel.",
-            technologies: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit", "Stripe"],
-            liveLink: "https://yourprojectlive.com",
-            githubLink: "https://github.com/sMv-Jones/your-repo"
+            img: "sMv_Blog.png",
+            projectName: "sMv|Blog",
+            description: " A full-stack blogging application built using the MERN Stack, featuring rich-text content creation with TinyMCE Editor, secure image hosting with Azure Blob Storage, and a serverless email notification microservice built with Google Apps Script.",
+            technologies: ["React", "Node.js", "Express", "MongoDB", "TinyMCE", "Azure Blob Storage", "Redux Toolkit"],
+            liveLink: "https://s-mv-blog.vercel.app/",
+            githubLink: "https://github.com/sMv-Jones/sMvBlog"
         },
         {
             id: 2,
-            img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80",
-            projectName: "Developer Collaboration Hub",
-            description: "A centralized social network built for technical users. Implements secure JWT access, aggregation tracking, real-time message rooms, and custom hardware profile showcases.",
-            technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
-            liveLink: "https://yourprojectlive2.com",
-            githubLink: "https://github.com/sMv-Jones/your-repo2"
+            img: "TalentGPT.png",
+            projectName: "TalentGPT",
+            description: "An intelligent, context-aware resume screening platform built with the MERN stack. The application uses Azure AI Document Intelligence for accurate resume parsing, Vector Cosine Similarity for semantic matching, and Google Gemini AI for advanced candidate analysis and skill-gap detection.",
+            technologies: ["Gemini", "React", "Node.js", "MongoDB", "Tailwind CSS"],
+            liveLink: "https://ai-enabled-ats-steel.vercel.app/",
+            githubLink: "https://github.com/sMv-Jones/AI-Enabled-ATS"
+        },
+        {
+            id: 3,
+            img: "NeuroDigest.png",
+            projectName: "NeuroDigest",
+            description: " full-stack AI-powered platform that transforms text, images, audio, video, and unstructured documents into clear, intelligent summaries. By combining a modern React frontend with a secure Express backend, it orchestrates multiple Microsoft Azure AI services to extract content from different formats and convert them into concise insights.",
+            technologies: ["Azure AI", "React", "Node.js", "MongoDB", "Tailwind CSS"],
+            liveLink: "https://ai-multi-model-summarizer.vercel.app/",
+            githubLink: "https://github.com/sMv-Jones/AI-Multi-Model-Summarizer"
         }
     ];
 

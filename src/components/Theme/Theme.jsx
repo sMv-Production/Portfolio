@@ -18,21 +18,13 @@ export default function ThemeSelector() {
     });
 
     const dropdownRef = useRef(null);
-
-    // Find current theme information early
     const currentTheme = THEMES.find(t => t.id === activeThemeId) || THEMES[0];
 
     useEffect(() => {
-        // 1. Sync data attribute for standard CSS selectors
         document.documentElement.setAttribute('data-theme', activeThemeId);
-        
-        // 2. Persist selection
         localStorage.setItem('app-theme', activeThemeId);
-        
-        // 3. Keep the inline style in sync with the current theme's base color
-        // This ensures the inline style from the Vite FOUC script updates seamlessly during manual changes
         if (currentTheme && currentTheme.colors) {
-            document.documentElement.style.backgroundColor = currentTheme.colors[0]; 
+            document.documentElement.style.backgroundColor = currentTheme.colors[0];
         }
     }, [activeThemeId, currentTheme]);
 

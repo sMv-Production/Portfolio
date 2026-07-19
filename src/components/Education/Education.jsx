@@ -5,28 +5,28 @@ function Education() {
     {
       level: "Graduation",
       degree: "B.Tech in Computer Science & Engineering",
-      institution: "Your College Name Here",
-      university: "Your University Name Here",
-      duration: "2022 - 2026",
-      metricType: "GPA",
-      metricValue: "8.0 / 10.0",
+      institution: "Shivalik College of Engineering",
+      university: "Uttarakhand Technical University",
+      duration: "2021 - 2025",
+      metricType: "CGPA",
+      metricValue: "8.1 / 10.0",
       isCollege: true
     },
     {
       level: "Higher Secondary (Class XII)",
       degree: "CBSE - Science Stream",
-      institution: "Your School Name Here",
-      duration: "2021 - 2022",
+      institution: "St. Mary's Convent School",
+      duration: "2020 - 2021",
       metricType: "Percentage",
-      metricValue: "X%" 
+      metricValue: "92.4%"
     },
     {
       level: "Secondary School (Class X)",
       degree: "CBSE",
-      institution: "Your School Name Here",
-      duration: "2019 - 2020",
+      institution: "St. Mary's Convent School",
+      duration: "2018 - 2019",
       metricType: "Percentage",
-      metricValue: "X%" 
+      metricValue: "94.2%"
     }
   ];
 
@@ -46,11 +46,11 @@ function Education() {
                 <span className="edu-level">{edu.level}</span>
                 <span className="edu-duration">{edu.duration}</span>
               </div>
-              
+
               <h3 className="edu-degree">{edu.degree}</h3>
               <p className="edu-institution">{edu.institution}</p>
               {edu.university && <p className="edu-university">{edu.university}</p>}
-              
+
               <div className="metric-badge-container">
                 <span className={`metric-badge ${edu.isCollege ? 'college-badge' : 'school-badge'}`}>
                   {edu.metricType}: <strong>{edu.metricValue}</strong>

@@ -11,7 +11,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Accent Heading */
 .about-title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -22,19 +21,16 @@
     background-clip: text;
 }
 
-/* Paragraph styling */
 .about-text {
     margin-bottom: 1.25rem;
     font-size: 1.05rem;
 }
 
-/* Bold highlights using secondary theme color */
 .about-container strong {
     color: var(--primary);
     font-weight: 600;
 }
 
-/* Highlight section for hardware/hobby to break text density */
 .highlight-box {
     background-color: var(--bg-secondary);
     border-left: 4px solid var(--accent);
@@ -48,7 +44,6 @@
     color: var(--text);
 }
 
-/* Subtle separator rule */
 .about-divider {
     border: 0;
     height: 1px;

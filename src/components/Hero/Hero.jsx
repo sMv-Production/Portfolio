@@ -11,17 +11,14 @@ function Hero() {
                 Focused on writing clean backend architecture and crafting dynamic user experiences.
             </p>
             <div className="hero-Contact">
-                {/* Email */}
                 <a target="_blank" rel="noopener noreferrer" href="mailto:mohdafzal_MA@outlook.com" title="Email Me">
                     <EmailIcon />
                 </a>
                 
-                {/* GitHub */}
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/sMv-Jones" title="GitHub Profile">
                     <GithubIcon />
                 </a>
                 
-                {/* LinkedIn */}
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohd-afzal-web-dev/" title="LinkedIn Profile">
                     <LinkedinIcon />
                 </a>

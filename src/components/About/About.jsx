@@ -3,7 +3,7 @@ import "./about.css";
 function About() {
     return (
         <div className="about-container">
-            <h4 className="about-title">Building Seamless Full-Stack Web Experiences.</h4>
+            <h4 className="about-title">Engineering High-Performance Web Apps From the Ground Up.</h4>
 
             <p className="about-text">
                 Hi, I'm <strong>Mohd Afzal</strong>, a full-stack developer specializing in the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js). I focus on bridging the gap between robust, scalable backend architecture and clean, highly responsive user interfaces. As an aspiring software engineer entering the tech industry, my goal is to build web applications that are not just functional, but optimized, highly secure, and intuitive for the end-user.

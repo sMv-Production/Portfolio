@@ -14,11 +14,30 @@ export default function App() {
         }
     };
 
+
+    useEffect(() => {
+        const urls = [
+            'https://smvblog-0ptu.onrender.com/ping',
+            'https://ai-enabled-ats-ngmw.onrender.com/ping',
+            'https://ai-multi-model-summarizer-dlfh.onrender.com/ping'
+        ];
+        const wakeUpServers = async () => {
+            try {
+                // Map each URL to a fetch promise and wait for all to resolve
+                await Promise.all(urls.map(url => fetch(url)));
+                console.log('server wake uped');
+            } catch (error) {
+                console.error('Error waking up servers:', error);
+            }
+        };
+
+        wakeUpServers();
+    }, []);
+
     useEffect(() => {
         const options = {
             root: null,
-            // Enhanced viewport balance checks to match the tightened section margins
-            rootMargin: '-30% 0px -50% 0px', 
+            rootMargin: '-30% 0px -50% 0px',
             threshold: 0
         };
 
@@ -31,7 +50,7 @@ export default function App() {
         };
 
         const observer = new IntersectionObserver(callback, options);
-        
+
         Object.values(sectionsRef.current).forEach((section) => {
             if (section) observer.observe(section);
         });
@@ -43,7 +62,6 @@ export default function App() {
         e.preventDefault();
         const element = sectionsRef.current[id];
         if (element) {
-            // Refined padding offset adjustments for accurate jump landings
             const offsetPosition = element.offsetTop - (window.innerWidth <= 1024 ? 80 : 48);
             window.scrollTo({
                 top: offsetPosition,
@@ -70,9 +88,9 @@ export default function App() {
                     <Hero />
                     <nav className="side-nav" aria-label="Main Navigation Shortcuts">
                         {['about', 'project', 'education', 'skill', 'resume', 'contact'].map((id) => (
-                            <a 
+                            <a
                                 key={id}
-                                href={`#${id}`} 
+                                href={`#${id}`}
                                 onClick={(e) => scrollToSection(e, id)}
                                 className={`nav-link ${activeSection === id ? 'active-section' : ''}`}
                             >

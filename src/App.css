@@ -19,7 +19,6 @@ body {
     padding: 0;
 }
 
-/* Structural Layout Wrapper */
 .app-container {
     display: flex;
     min-height: 100vh;
@@ -28,13 +27,12 @@ body {
     position: relative;
 }
 
-/* Left Sticky Panel (Desktop View) */
 .left-panel {
     width: 400px;
     position: sticky;
     top: 0;
-    height: 100vh; /* Keeps it exactly viewport height */
-    padding: 1rem 1rem; /* Slightly reduced top padding */
+    height: 100vh; 
+    padding: 1rem 1rem; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -42,20 +40,19 @@ body {
     border-right: 1px solid var(--border);
     background-color: var(--bg);
     z-index: 10;
-    overflow: hidden; /* Prevents the left panel itself from ever shifting/scrolling */
+    overflow: hidden; 
 }
 
 .left-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Tightened gap between name details and navigation links */
+    gap: 2rem;
 }
 
-/* Sidebar Navigation Links */
 .side-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem; /* Snugger navigation stack */
+    gap: 0.75rem;
 }
 
 .nav-link {
@@ -99,32 +96,26 @@ body {
     background-color: var(--primary);
 }
 
-/* Right Scrollable Panel */
 .right-panel {
     flex: 1;
-    /* OPTIMIZED: Reduced top/bottom padding to 1rem while keeping 3rem side margins */
     padding: 1rem 3rem; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* OPTIMIZED: Kept a clean 1.25rem gap between components so they don't look choked */
     gap: 1.25rem; 
 }
 
-/* Ensure sections contain minimal baseline paddings */
 .right-panel > section {
     margin: 0;
     padding: 0;
-    scroll-margin-top: 1.5rem; /* OPTIMIZED: Lowered to match the tighter layout alignment */
+    scroll-margin-top: 1.5rem; 
 }
 
-/* Desktop Theme Wrapper alignment anchoring */
 .desktop-theme-wrapper {
     margin-top: auto;
     padding-top: 1.5rem;
 }
 
-/* Mobile Sticky Context Bar */
 .mobile-section-header {
     display: none;
     position: sticky;
@@ -154,7 +145,6 @@ body {
     color: var(--primary);
 }
 
-/* Responsive Overrides */
 @media (max-width: 1024px) {
     .app-container {
         flex-direction: column;
@@ -162,7 +152,7 @@ body {
 
     .left-panel {
         width: 100%;
-        height: auto; /* Dynamic fallback on mobile screens */
+        height: auto; 
         position: static;
         padding: 2.5rem 0rem 1.5rem 1.5rem;
         border-right: none;
@@ -179,7 +169,6 @@ body {
     }
 
     .right-panel {
-        /* OPTIMIZED: Reduced vertical padding on mobile screens for better density */
         padding: 1rem 1.5rem 1.5rem 1.5rem;
         gap: 1.5rem;
     }

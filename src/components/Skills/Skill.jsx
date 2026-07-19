@@ -1,24 +1,25 @@
 import "./skill.css";
 
 function Skill() {
-  const coreSkills = ["Frontend Development", "UI/UX Design", "RESTful APIs", "State Management"];
-  const frameworks = ["React", "Vue.js", "Next.js", "Tailwind CSS", "Bootstrap"];
-  const tools = ["Vite", "Git & GitHub", "Figma", "VS Code", "Postman", "Docker"];
+  const languages = ["JavaScript", "HTML5", "CSS3", "Python"];
+  const mernStack = ["MongoDB", "Express.js", "React.js", "Node.js"];
+  const coreSkills = ["Backend Development", "Frontend Development", "RESTful APIs", "State Management"];
+  const tools = ["Azure Cloud", "Vercel", "Render","Git & GitHub", "VS Code", "Postman"];
   
   const certifications = [
     {
-      name: "Meta Front-End Developer Professional Certificate",
+      name: "Crash Course on Python",
       issuer: "Coursera",
-      date: "2026",
-      status: "Verified", // Uses success theme color
-      link: "#"
+      date: "2022",
+      status: "Verified",
+      link: "Coursera_Python_Crash_Course.pdf"
     },
     {
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2026",
+      name: "Certificate on Azure AI",
+      issuer: "Honeywell",
+      date: "2025",
       status: "Verified",
-      link: "#"
+      link: "Azure_Artifical_Intelligence.jpeg"
     }
   ];
 
@@ -26,14 +27,31 @@ function Skill() {
     <div className="skills-container">
       <div className="skills-header">
         <h2 className="section-title">My Toolbox & Credentials</h2>
-        <p className="section-subtitle">The technologies, tools, and certifications I use to bring ideas to life.</p>
+        <p className="section-subtitle">The languages, frameworks, and developer environments I use to build scaleable web applications.</p>
       </div>
       
-      {/* Grid Layout for Skills, Frameworks, and Tools */}
       <div className="skills-grid">
-        {/* Core Skills */}
+        
         <div className="skills-card">
-          <h3 className="card-heading core-title">Core Skills</h3>
+          <h3 className="card-heading language-title">Languages</h3>
+          <ul className="skills-list">
+            {languages.map((lang, index) => (
+              <li key={index} className="skill-badge lang">{lang}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="skills-card">
+          <h3 className="card-heading mern-title">MERN Stack</h3>
+          <ul className="skills-list">
+            {mernStack.map((tech, index) => (
+              <li key={index} className="skill-badge mern">{tech}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="skills-card">
+          <h3 className="card-heading core-title">Engineering Core</h3>
           <ul className="skills-list">
             {coreSkills.map((skill, index) => (
               <li key={index} className="skill-badge core">{skill}</li>
@@ -41,30 +59,19 @@ function Skill() {
           </ul>
         </div>
 
-        {/* Frameworks */}
         <div className="skills-card">
-          <h3 className="card-heading framework-title">Frameworks</h3>
-          <ul className="skills-list">
-            {frameworks.map((fw, index) => (
-              <li key={index} className="skill-badge framework">{fw}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Tools */}
-        <div className="skills-card">
-          <h3 className="card-heading tool-title">Tools & Software</h3>
+          <h3 className="card-heading tool-title">Tools & Cloud</h3>
           <ul className="skills-list">
             {tools.map((tool, index) => (
               <li key={index} className="skill-badge tool">{tool}</li>
             ))}
           </ul>
         </div>
+
       </div>
 
-      {/* Certifications Section */}
       <div className="certifications-section">
-        <h3 className="cert-section-title">Certifications & Verification</h3>
+        <h3 className="cert-section-title">Certifications</h3>
         <div className="cert-grid">
           {certifications.map((cert, index) => (
             <div key={index} className="cert-card">
