@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './theme.css';
 
+// Exact color mappings matching CSS: [--bg, --primary, --secondary, --accent]
 const THEMES = [
     { id: 'midnight', name: 'Midnight', colors: ['#0B0F19', '#6366F1', '#A855F7', '#F43F5E'] },
     { id: 'slate', name: 'Slate', colors: ['#0F172A', '#0EA5E9', '#2DD4BF', '#38BDF8'] },
@@ -14,7 +15,12 @@ export default function ThemeSelector() {
     const [isOpen, setIsOpen] = useState(false);
 
     const [activeThemeId, setActiveThemeId] = useState(() => {
-        return localStorage.getItem('app-theme') || 'midnight';
+        const savedTheme = localStorage.getItem('app-theme');
+        if (savedTheme) return savedTheme;
+
+        // Fallback based on system preference (dark -> slate, light -> light)
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'slate' : 'light';
     });
 
     const dropdownRef = useRef(null);
